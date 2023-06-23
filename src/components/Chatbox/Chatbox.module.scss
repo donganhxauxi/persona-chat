@@ -1,0 +1,39 @@
+.Chatbox {
+  width: 320px;
+  border: 1px solid blue;
+  border-radius: 8px;
+  margin: auto;
+
+  &__Header {
+    background-color: blue;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    width: 100%;
+  }
+
+  &__MessagesContainer {
+    padding: 4px 8px;
+  }
+
+  &__ActionsContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__Chatbar {
+    width: calc(100% - 8px);
+    border: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    &:focus {
+      border: none;
+    }
+  }
+
+  &__SubmitBtn {
+    background-color: blue;
+  }
+}
