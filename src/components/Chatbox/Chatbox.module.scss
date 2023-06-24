@@ -11,10 +11,37 @@
     border-top-right-radius: 8px;
     color: white;
     width: 100%;
+    padding: 4px 8px;
+    text-transform: uppercase;
   }
 
   &__MessagesContainer {
     padding: 4px 8px;
+    max-height: 640px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__Message {
+    border-radius: 8px;
+    width: calc(50% - 16px);
+    margin: 8px 16px;
+    padding: 8px 16px;
+  }
+
+  &__UserMessage {
+    align-self: flex-end;
+    background-color: blue;
+
+    color: #fff;
+  }
+
+  &__AssistantMessage {
+    align-self: flex-start;
+    background-color: blue;
+
+    color: #fff;
   }
 
   &__ActionsContainer {
@@ -24,12 +51,13 @@
 
   &__Chatbar {
     width: calc(100% - 8px);
-    border: none;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    // margin-bottom: 8px;
+    border-bottom: none;
+    // border-bottom-left-radius: 8px;
+    // border-bottom-right-radius: 8px;
 
     &:focus {
-      border: none;
+      outline: none;
     }
   }
 
