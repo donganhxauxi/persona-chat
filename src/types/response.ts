@@ -1,4 +1,4 @@
-interface ChatResponse {
+export interface ChatResponse {
   choices: {
     finish_reason: string;
     index: number;
@@ -16,4 +16,9 @@ interface ChatResponse {
     completion_tokens: number;
     total_tokens: number;
   };
+}
+
+export interface Message {
+  role: "system" | "user" | "assistant" | "function";
+  content: string;
 }
